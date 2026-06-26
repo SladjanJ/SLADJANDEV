@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+:root {
+  --primary-btn: #0011ff;
+  --secondary-btn: #c8d2e7;
+  --primary-bg: #0c1c69;
+  --project-card: #1c285e;
+  --navbar-footer: #0c1647;
+  --text-primary: #ffffff;
+  --text-muted: #c8d2e7;
+  --header-height: 4.5rem;
+  --carousel-bg: #0f1d63;
+  --carousel-border: #212ab1;
+}
+
+@theme inline {
+  --color-primary-btn: var(--primary-btn);
+  --color-secondary-btn: var(--secondary-btn);
+  --color-primary-bg: var(--primary-bg);
+  --color-project-card: var(--project-card);
+  --color-navbar-footer: var(--navbar-footer);
+  --color-text-primary: var(--text-primary);
+  --color-text-muted: var(--text-muted);
+  --font-sans: var(--font-inter);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--primary-bg);
+  color: var(--text-primary);
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+.hero-section {
+  background-color: var(--primary-bg);
+  background-image:
+    radial-gradient(
+      ellipse 90% 60% at 50% -10%,
+      rgba(12, 22, 71, 0.95) 0%,
+      transparent 55%
+    ),
+    radial-gradient(
+      ellipse 70% 50% at 75% 40%,
+      rgba(0, 17, 255, 0.07) 0%,
+      transparent 60%
+    );
+}
+
+.carousel-strip {
+  background-color: var(--carousel-bg);
+  border-top: 2px solid var(--carousel-border);
+  border-bottom: 2px solid var(--carousel-border);
+}
+
+section[id] {
+  scroll-margin-top: var(--header-height);
+}

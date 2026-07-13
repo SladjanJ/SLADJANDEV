@@ -8,15 +8,34 @@ type ProjectCardProps = {
   project: Project;
 };
 
-function TagChip({ label, icon }: { label: string; icon?: string }) {
-  return (
-    <span className="inline-flex items-center gap-1.5 rounded bg-white/10 px-2.5 py-1 text-xs font-medium text-text-primary">
+function TagChip({ label, icon, href }: { label: string; icon?: string; href?: string }) {
+  const className =
+    "inline-flex items-center gap-1.5 rounded bg-white/10 px-2.5 py-1 text-xs font-medium text-text-primary transition-colors hover:bg-white/20";
+
+  const content = (
+    <>
       {icon ? (
         <Image src={icon} alt="" width={16} height={16} className="h-4 w-4 shrink-0" />
       ) : null}
       {label}
-    </span>
+    </>
   );
+
+  if (href) {
+    return (
+      <Link
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={className}
+        aria-label={`${label} website`}
+      >
+        {content}
+      </Link>
+    );
+  }
+
+  return <span className={className}>{content}</span>;
 }
 
 export function ProjectCard({ project }: ProjectCardProps) {
@@ -46,7 +65,12 @@ export function ProjectCard({ project }: ProjectCardProps) {
         <div className="mt-auto flex flex-col gap-4 pt-5 sm:flex-row sm:items-end sm:justify-between sm:pt-6">
           <div className="flex flex-wrap gap-2">
             {project.tags.map((tag) => (
-              <TagChip key={tag.label} label={tag.label} icon={"icon" in tag ? tag.icon : undefined} />
+              <TagChip
+                key={tag.label}
+                label={tag.label}
+                icon={"icon" in tag ? tag.icon : undefined}
+                href={"href" in tag ? tag.href : undefined}
+              />
             ))}
           </div>
 

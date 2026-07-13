@@ -21,11 +21,41 @@ export const HERO_COPY = {
 } as const;
 
 export const CAROUSEL_LOGOS = [
-  { src: "/images/carousel/python-img.png", alt: "Python", width: 41, height: 37 },
-  { src: "/images/carousel/github-img.png", alt: "GitHub", width: 41, height: 36 },
-  { src: "/images/carousel/webflow-img.png", alt: "Webflow", width: 37, height: 37 },
-  { src: "/images/carousel/figma-img.png", alt: "Figma", width: 41, height: 37 },
-  { src: "/images/carousel/jupyter-img.png", alt: "Jupyter", width: 60, height: 45 },
+  {
+    src: "/images/carousel/python-img.png",
+    alt: "Python",
+    width: 41,
+    height: 37,
+    href: "https://www.python.org/",
+  },
+  {
+    src: "/images/carousel/github-img.png",
+    alt: "GitHub",
+    width: 41,
+    height: 36,
+    href: "https://github.com/SladjanJ/SladjanJ",
+  },
+  {
+    src: "/images/carousel/webflow-img.png",
+    alt: "Webflow",
+    width: 37,
+    height: 37,
+    href: "https://webflow.com/",
+  },
+  {
+    src: "/images/carousel/figma-img.png",
+    alt: "Figma",
+    width: 41,
+    height: 37,
+    href: "https://www.figma.com/",
+  },
+  {
+    src: "/images/carousel/jupyter-img.png",
+    alt: "Jupyter",
+    width: 60,
+    height: 45,
+    href: "https://jupyter.org/",
+  },
 ] as const;
 
 export const GITHUB_PROFILE_URL = "https://github.com/SladjanJ/SladjanJ";
@@ -82,16 +112,27 @@ export const PROJECTS_COPY = {
 
 export const PROJECTS = [
   {
-    title: "Personal Portfolio Website",
+    title: "PlaySlot",
     description:
-      "Custom-coded portfolio built with Next.js, TypeScript, and Tailwind — designed in Figma and optimized for conversions.",
-    href: "#hero",
-    external: false,
+      "Web app for booking football pitch time slots — built for the Balkan market with real-time availability, responsive UI, and deployed on Vercel.",
+    href: "https://play-slot-web-app.vercel.app/",
+    external: true,
     image: {
       src: "/images/projects/first-project-img.png",
-      alt: "Personal Portfolio Website screenshot",
+      alt: "PlaySlot football booking web app screenshot",
     },
-    tags: [{ label: "Next.js" }, { label: "Figma", icon: "/images/projects/figma-tag-icon.png" }],
+    tags: [
+      {
+        label: "Next.js",
+        icon: "/images/projects/nextjs-tag-icon.svg",
+        href: "https://nextjs.org",
+      },
+      {
+        label: "Supabase",
+        icon: "/images/projects/supabase-tag-icon.svg",
+        href: "https://supabase.com",
+      },
+    ],
   },
   {
     title: "Product Classifier",

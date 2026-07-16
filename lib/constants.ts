@@ -19,7 +19,7 @@ export const HERO_COPY = {
   headlineLine2Prefix: "VISITORS INTO ",
   headlineAccent: "CLIENTS",
   subheadline:
-    "I build fast, modern websites tailored to your business—focused on performance, user experience, and turning visitors into paying clients.",
+    "Full-stack web developer building fast websites and web apps with Next.js, React, and Supabase — plus Webflow when it fits your project best.",
   ctaPrimary: "Start Your Project",
   ctaSecondary: "View My Work",
 } as const;
@@ -71,14 +71,14 @@ export const ABOUT_COPY = {
   headingLead: "About",
   headingAccent: "me",
   subheadline:
-    "Hi, I'm Slađan – Web Developer specializing in Webflow & AI-assisted builds",
+    "Hi, I'm Slađan – Full-Stack Web Developer (Next.js, React & Supabase)",
   paragraphs: [
     "ITAcademy certified Python/AI specialist (92.6% accuracy product classifier)",
     "What clients get:",
   ],
   bullets: [
-    "Conversion-focused Webflow sites",
-    "Data analysis & ML model deployment",
+    "Custom web apps & landing pages with modern stacks",
+    "Webflow development when no-code is the right fit",
     "WordPress → Webflow migrations",
   ],
   outro: [
@@ -96,7 +96,7 @@ export const ABOUT_COPY = {
     rows: [
       { icon: "📍", label: "LOCATED IN", value: "Podgorica, Montenegro (CET)" },
       { icon: "🌐", label: "SERVING", value: "EU Remote Clients via Upwork" },
-      { icon: "🎓", label: "SPECIALTIES", value: "Python ML (92.6%) | Webflow Dev" },
+      { icon: "🎓", label: "SPECIALTIES", value: "Full-Stack Web Dev | Webflow" },
     ],
     connectLabel: "LET'S CONNECT",
     connectLinks: [
@@ -230,7 +230,7 @@ export const LEAD_MAGNET_COPY = {
 export const CONTACT_COPY = {
   heading: "Ready to grow online?",
   subtext:
-    "Whether you need a landing page, Webflow site, or custom web app — let's talk about your goals and find the right approach.",
+    "Whether you need a custom web app, landing page, or Webflow site — let's talk about your goals and find the right approach.",
   ctaLabel: "Send My Inquiry →",
   ctaHref: OFFER_ANCHOR,
 } as const;
@@ -245,30 +245,30 @@ export const SERVICES_COPY = {
 export const SERVICES = [
   {
     number: "1",
-    iconSrc: "/images/services/first-cookie-icon.svg",
-    title: "Webflow & landing page design",
+    iconSrc: "/images/services/second-code-icon.svg",
+    title: "Full-stack web development",
     description:
-      "Conversion-focused design that guides visitors toward action — not just pages that look good.",
+      "Next.js, React, and Supabase — from landing pages to full web apps with clean code, fast load times, and SEO-ready structure.",
   },
   {
     number: "2",
-    iconSrc: "/images/services/second-code-icon.svg",
-    title: "Fast, responsive development",
+    iconSrc: "/images/services/first-cookie-icon.svg",
+    title: "Landing pages & responsive UI",
     description:
-      "Next.js, Webflow, and Supabase builds with clean code, fast load times, and SEO-ready structure.",
+      "Conversion-focused pages that guide visitors toward action — built with modern frameworks or Webflow when it fits best.",
   },
   {
     number: "3",
     iconSrc: "/images/services/third-database-icon.svg",
-    title: "WordPress → Webflow migration",
+    title: "Webflow development & migration",
     description:
-      "Move off WordPress to a faster, easier-to-manage Webflow site without losing your content or design quality.",
+      "Custom Webflow sites and WordPress → Webflow migrations — faster, easier to manage, without losing content or design quality.",
   },
   {
     number: "4",
     iconSrc: "/images/services/fourth-analytic-icon.svg",
     title: "Performance & analytics",
     description:
-      "Core Web Vitals, GA4 setup, and clear metrics so you know what's working and what to improve.",
+      "Core Web Vitals, analytics setup, and clear metrics so you know what's working and what to improve.",
   },
 ] as const;

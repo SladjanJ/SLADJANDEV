@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { HEADER_NAV_LINKS, OFFER_ANCHOR } from "@/lib/constants";
+import { HEADER_NAV_LINKS, HEADER_CTA, OFFER_ANCHOR } from "@/lib/constants";
 import { Button } from "@/components/ui/Button";
 
 export function MobileNav() {
@@ -56,7 +56,7 @@ export function MobileNav() {
                 className="mt-2 w-full"
                 onClick={closeMenu}
               >
-                Contact Me
+                {HEADER_CTA}
               </Button>
             </nav>
           </div>

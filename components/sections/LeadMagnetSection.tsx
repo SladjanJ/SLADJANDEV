@@ -108,7 +108,7 @@ export function LeadMagnetSection() {
 
   if (status === "success") {
     return (
-      <section id="offer" aria-label="Limited-time offer" className="bg-primary-bg py-16 sm:py-20 lg:py-24">
+      <section id="offer" aria-label="Free consultation" className="bg-primary-bg py-16 sm:py-20 lg:py-24">
         <div className="mx-auto max-w-4xl px-5 sm:px-8 md:px-10 lg:px-12">
           <div className="rounded-2xl border border-white/10 bg-[#0a1440]/95 px-5 py-12 text-center sm:px-8 sm:py-14 lg:px-12 lg:py-16">
             <OfferBadge />
@@ -133,7 +133,7 @@ export function LeadMagnetSection() {
   }
 
   return (
-    <section id="offer" aria-label="Limited-time offer" className="bg-primary-bg py-16 sm:py-20 lg:py-24">
+    <section id="offer" aria-label="Free consultation" className="bg-primary-bg py-16 sm:py-20 lg:py-24">
       <div className="mx-auto max-w-4xl px-5 sm:px-8 md:px-10 lg:px-12">
         <div className="rounded-2xl border border-white/10 bg-[#0a1440]/95 px-5 py-10 sm:px-8 sm:py-12 lg:px-12 lg:py-14">
           <OfferBadge />

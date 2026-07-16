@@ -152,7 +152,7 @@ function AboutButtons({ stacked = false, className = "" }: { stacked?: boolean; 
       className={`flex gap-3 ${stacked ? "flex-col items-center" : "flex-row items-center"} ${className}`}
     >
       <Button href={OFFER_ANCHOR} variant="primary" className={buttonClass}>
-        Contact Me
+        {ABOUT_COPY.ctaPrimary}
       </Button>
       <Button
         href={CV_URL}
@@ -162,7 +162,7 @@ function AboutButtons({ stacked = false, className = "" }: { stacked?: boolean; 
         download
         className={buttonClass}
       >
-        Download Cv
+        {ABOUT_COPY.ctaCv}
       </Button>
     </div>
   );

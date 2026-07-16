@@ -41,7 +41,7 @@ export function ProjectsSection() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            My Work
+            {PROJECTS_COPY.ctaLabel}
           </Button>
         </div>
       </div>

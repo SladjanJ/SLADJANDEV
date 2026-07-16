@@ -9,9 +9,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Sladjan Jeremic | Web Developer",
+  title: "Sladjan Jeremic | Webflow & Next.js Developer",
   description:
-    "Web Developer building fast, conversion-focused websites for modern businesses. Webflow, custom code, and AI-assisted development.",
+    "I build fast, conversion-focused websites and web apps for EU businesses. Webflow, Next.js, Supabase — from landing pages to full-stack products.",
 };
 
 export default function RootLayout({

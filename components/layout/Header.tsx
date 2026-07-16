@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { HEADER_NAV_LINKS, OFFER_ANCHOR } from "@/lib/constants";
+import { HEADER_NAV_LINKS, HEADER_CTA, OFFER_ANCHOR } from "@/lib/constants";
 import { Button } from "@/components/ui/Button";
 import { MobileNav } from "@/components/layout/MobileNav";
 
@@ -28,7 +28,7 @@ export function Header() {
 
         <div className="hidden lg:block">
           <Button href={OFFER_ANCHOR} variant="secondary-filled">
-            Contact Me
+            {HEADER_CTA}
           </Button>
         </div>
 

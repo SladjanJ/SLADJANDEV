@@ -21,7 +21,7 @@ export function HeroSection() {
 
           <div className="mt-8 flex w-full max-w-md flex-col gap-3 sm:gap-4 md:flex-row md:justify-center lg:justify-start">
             <Button href={OFFER_ANCHOR} variant="primary" className="w-full md:w-auto">
-              Contact Me
+              {HERO_COPY.ctaPrimary}
             </Button>
             <Button
               href="#work"
@@ -30,7 +30,7 @@ export function HeroSection() {
               iconAlt=""
               className="w-full md:w-auto"
             >
-              My Work
+              {HERO_COPY.ctaSecondary}
             </Button>
           </div>
         </div>

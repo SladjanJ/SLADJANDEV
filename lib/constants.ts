@@ -1,6 +1,8 @@
 export const CONTACT_EMAIL = "sladjanjeremi123@gmail.com";
 export const OFFER_ANCHOR = "#offer";
 
+export const HEADER_CTA = "Start Your Project";
+
 export const HEADER_NAV_LINKS = [
   { label: "WORK", href: "#work" },
   { label: "ABOUT ME", href: "#about" },
@@ -13,11 +15,13 @@ export const FOOTER_NAV_LINKS = [
 ] as const;
 
 export const HERO_COPY = {
-  headlineLine1: "WEB DEVELOPER FOR MODERN",
-  headlineLine2Prefix: "BUSINESS ",
-  headlineAccent: "WEBSITES",
+  headlineLine1: "WEBSITES THAT TURN",
+  headlineLine2Prefix: "VISITORS INTO ",
+  headlineAccent: "CLIENTS",
   subheadline:
-    "I build fast, modern websites that look professional, load quickly, and help your business turn visitors into paying clients.",
+    "I build fast, modern websites tailored to your business—focused on performance, user experience, and turning visitors into paying clients.",
+  ctaPrimary: "Start Your Project",
+  ctaSecondary: "View My Work",
 } as const;
 
 export const CAROUSEL_LOGOS = [
@@ -63,14 +67,14 @@ export const LINKEDIN_URL = "https://www.linkedin.com/in/sladjan-jeremic";
 export const CV_URL = "/Europass%20CV%20template.pdf";
 
 export const ABOUT_COPY = {
-  nameBadge: "Jeremic Sladjan",
+  nameBadge: "Sladjan Jeremic",
   headingLead: "About",
   headingAccent: "me",
   subheadline:
     "Hi, I'm Slađan – Web Developer specializing in Webflow & AI-assisted builds",
   paragraphs: [
-    "ITAcademy certified Python/AI specialist (98.6% accuracy product classifier)",
-    "Delivered 5★ Upwork projects:",
+    "ITAcademy certified Python/AI specialist (92.6% accuracy product classifier)",
+    "What clients get:",
   ],
   bullets: [
     "Conversion-focused Webflow sites",
@@ -78,20 +82,21 @@ export const ABOUT_COPY = {
     "WordPress → Webflow migrations",
   ],
   outro: [
-    "100% client satisfaction | 3x average sales increase",
-    "Let's build high-performing websites for your business.",
+    "I work with EU businesses remotely — clear communication, fast delivery, and websites built to convert.",
   ],
   stats: [
-    { value: "5", accent: "★", label: "Upwork reviews" },
-    { value: "100", accent: "%", label: "Client satisfaction" },
-    { value: "3", accent: "x", label: "Faster Webflow sites" },
+    { value: "92.6", accent: "%", label: "ML model accuracy" },
+    { value: "24", accent: "h", label: "Average response time" },
+    { value: "3", accent: "+", label: "Live projects shipped" },
   ],
+  ctaPrimary: "Get Free Consultation",
+  ctaCv: "Download CV",
   locationCard: {
     title: "Located in",
     rows: [
       { icon: "📍", label: "LOCATED IN", value: "Podgorica, Montenegro (CET)" },
       { icon: "🌐", label: "SERVING", value: "EU Remote Clients via Upwork" },
-      { icon: "🎓", label: "SPECIALTIES", value: "Python ML (98.6%) | Webflow Dev" },
+      { icon: "🎓", label: "SPECIALTIES", value: "Python ML (92.6%) | Webflow Dev" },
     ],
     connectLabel: "LET'S CONNECT",
     connectLinks: [
@@ -107,7 +112,8 @@ export const PROJECTS_COPY = {
   headingLead: "Featured",
   headingAccent: "work",
   description:
-    "A selection of projects that show how I design, build, and deliver websites and web solutions for real business goals.",
+    "Real projects — from booking apps to ML tools — built with modern stacks and a focus on usability and business results.",
+  ctaLabel: "View on GitHub",
 } as const;
 
 export const PROJECTS = [
@@ -137,7 +143,7 @@ export const PROJECTS = [
   {
     title: "Product Classifier",
     description:
-      "ML model with 98.6% accuracy — Python, pandas, scikit-learn, and TF-IDF for intelligent product categorization.",
+      "ML model with 92.6% accuracy — Python, pandas, scikit-learn, and TF-IDF for intelligent product categorization.",
     href: GITHUB_PROFILE_URL,
     external: true,
     image: {
@@ -200,19 +206,19 @@ export const SOCIAL_LINKS = [
 ] as const;
 
 export const LEAD_MAGNET_COPY = {
-  badge: "Limited-time offer",
-  headlineLead: "Get",
-  headlineAccent: "50% OFF",
-  headlineTrail: "Your Website Project",
+  badge: "Free Consultation",
+  headlineLead: "Start Your",
+  headlineAccent: "Web Project",
+  headlineTrail: "Today",
   subtext:
-    "Conversion-focused websites built to grow your business. 50% off for the first 10 clients — final price based on project scope.",
-  scarcityLead: "First",
-  scarcityAccent: "10",
-  scarcityTrail: "clients only",
+    "Tell me about your business and goals. I'll reply within 24 hours with a clear plan and the best solution for your website or web application.",
+  scarcityLead: "Fast response • Clear communication •",
+  scarcityAccent: "Modern development",
+  scarcityTrail: "",
   namePlaceholder: "Enter your name",
   emailPlaceholder: "Enter your email address",
-  messagePlaceholder: "What do you need?",
-  submitLabel: "Get My 50% Discount →",
+  messagePlaceholder: "Describe your project…",
+  submitLabel: "Send My Inquiry →",
   submitLoadingLabel: "Sending…",
   footnote: "By submitting, you agree to our Terms and Conditions",
   successTitle: "Thanks! I'll get back to you within 24 hours.",
@@ -222,17 +228,17 @@ export const LEAD_MAGNET_COPY = {
 } as const;
 
 export const CONTACT_COPY = {
-  heading: "Start your web project today",
+  heading: "Ready to grow online?",
   subtext:
-    "Free 15-minute consultation. Get a site that sells — plus guidance on performance and analytics.",
-  ctaLabel: "Book Free Consultation →",
+    "Whether you need a landing page, Webflow site, or custom web app — let's talk about your goals and find the right approach.",
+  ctaLabel: "Send My Inquiry →",
   ctaHref: OFFER_ANCHOR,
 } as const;
 
 export const SERVICES_COPY = {
-  eyebrow: "Complete digital solutions for growing your business",
-  heading: "Web Development & Digital Solutions",
-  ctaLabel: "Contact Me",
+  eyebrow: "From landing page to full web app — built for results",
+  heading: "What I Build For Clients",
+  ctaLabel: "Start Your Project →",
   ctaHref: OFFER_ANCHOR,
 } as const;
 
@@ -240,29 +246,29 @@ export const SERVICES = [
   {
     number: "1",
     iconSrc: "/images/services/first-cookie-icon.svg",
-    title: "Landing page design",
+    title: "Webflow & landing page design",
     description:
-      "Modern, conversion-focused landing page designs that capture attention, communicate value, and guide users toward action.",
+      "Conversion-focused design that guides visitors toward action — not just pages that look good.",
   },
   {
     number: "2",
     iconSrc: "/images/services/second-code-icon.svg",
-    title: "Landing page development",
+    title: "Fast, responsive development",
     description:
-      "Fast, responsive websites and Webflow pages built with clean structure, optimized performance, and scalable components.",
+      "Next.js, Webflow, and Supabase builds with clean code, fast load times, and SEO-ready structure.",
   },
   {
     number: "3",
     iconSrc: "/images/services/third-database-icon.svg",
-    title: "CRM optimization",
+    title: "WordPress → Webflow migration",
     description:
-      "Streamlined CRM setups and workflows to manage leads, automate processes, and improve customer relationships.",
+      "Move off WordPress to a faster, easier-to-manage Webflow site without losing your content or design quality.",
   },
   {
     number: "4",
     iconSrc: "/images/services/fourth-analytic-icon.svg",
-    title: "Analytics analysis",
+    title: "Performance & analytics",
     description:
-      "In-depth analysis of user behavior and site performance to optimize conversions and support data-driven decisions.",
+      "Core Web Vitals, GA4 setup, and clear metrics so you know what's working and what to improve.",
   },
 ] as const;

@@ -37,6 +37,14 @@ export default function PrivacyPage() {
             deliver requested services. I do not sell your personal data to third parties.
           </p>
 
+          <h2 className="text-xl font-semibold text-text-primary">Analytics</h2>
+          <p>
+            This site uses Vercel Web Analytics to understand how visitors use the website
+            (for example, page views, referrer, country, and device type). Analytics data
+            is collected in an aggregated, privacy-friendly way and is not used for
+            advertising. Vercel does not use cookies for Web Analytics.
+          </p>
+
           <h2 className="text-xl font-semibold text-text-primary">Contact</h2>
           <p>
             For privacy-related questions, email{" "}
@@ -53,9 +61,10 @@ export default function PrivacyPage() {
         <section id="cookies" className="mt-12 scroll-mt-24 space-y-4">
           <h2 className="text-xl font-semibold text-text-primary">Cookies Settings</h2>
           <p className="text-sm leading-relaxed text-text-muted sm:text-base">
-            This website uses minimal cookies required for basic functionality. In v1, no
-            analytics or marketing cookies are enabled. You can manage browser cookie
-            preferences through your browser settings.
+            This website uses minimal cookies required for basic functionality. Vercel Web
+            Analytics is enabled to measure anonymous site usage and does not use
+            advertising or marketing cookies. You can manage browser cookie preferences
+            through your browser settings.
           </p>
         </section>
       </div>

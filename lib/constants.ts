@@ -112,7 +112,7 @@ export const PROJECTS_COPY = {
   headingLead: "Featured",
   headingAccent: "work",
   description:
-    "Real projects — from booking apps to ML tools — built with modern stacks and a focus on usability and business results.",
+    "Real projects — from booking apps and marketplaces to ML tools — built with modern stacks and a focus on usability and business results.",
   ctaLabel: "View on GitHub",
 } as const;
 
@@ -156,16 +156,37 @@ export const PROJECTS = [
     ],
   },
   {
-    title: "Figma Prototypes",
+    title: "Marketplace",
     description:
-      "UI/UX design for web apps — responsive layouts focused on clarity, usability, and conversion.",
-    href: "https://www.figma.com/design/1Rgq5wYbcwAyvudZZZxXnX/Portfolio?node-id=0-1&t=E9MIP1vKsUzDnazt-1",
+      "Post your ad and browse what's for sale — a Laravel marketplace with search, category, location and price filters, bilingual UI (Serbian/English), and review before listings go live.",
+    href: "https://marketplace-iob1.onrender.com/",
     external: true,
     image: {
-      src: "/images/projects/third-project-img.png",
-      alt: "Figma prototypes",
+      src: "/images/projects/marketplace-img.png",
+      alt: "Marketplace classifieds web app screenshot",
     },
-    tags: [{ label: "Figma", icon: "/images/projects/figma-tag-icon.png" }],
+    tags: [
+      {
+        label: "Laravel",
+        icon: "/images/projects/laravel-tag-icon.svg",
+        href: "https://laravel.com",
+      },
+      {
+        label: "PHP",
+        icon: "/images/projects/php-tag-icon.svg",
+        href: "https://www.php.net",
+      },
+      {
+        label: "MySQL",
+        icon: "/images/projects/mysql-tag-icon.svg",
+        href: "https://www.mysql.com",
+      },
+      {
+        label: "Blade",
+        icon: "/images/projects/blade-tag-icon.svg",
+        href: "https://laravel.com/docs/blade",
+      },
+    ],
   },
 ] as const;
 

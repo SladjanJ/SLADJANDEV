@@ -112,8 +112,9 @@ export const PROJECTS_COPY = {
   headingLead: "Featured",
   headingAccent: "work",
   description:
-    "Real projects — from booking apps and marketplaces to ML tools — built with modern stacks and a focus on usability and business results.",
+    "Real projects — from booking apps and marketplaces to web games — built with modern stacks and a focus on usability and business results.",
   ctaLabel: "View on GitHub",
+  imageCta: "Watch live",
 } as const;
 
 export const PROJECTS = [
@@ -141,18 +142,28 @@ export const PROJECTS = [
     ],
   },
   {
-    title: "Product Classifier",
+    title: "Starling",
     description:
-      "ML model with 92.6% accuracy — Python, pandas, scikit-learn, and TF-IDF for intelligent product categorization.",
-    href: GITHUB_PROFILE_URL,
+      "One-tap web game — fly a starling home through dusk pipes before night. Built with HTML, CSS, and JavaScript, play instantly in the browser.",
+    href: "https://starling-game.netlify.app",
     external: true,
     image: {
-      src: "/images/projects/second-project-img.png",
-      alt: "Product Classifier project",
+      src: "/images/projects/starling-img.png",
+      alt: "Starling web game title screen",
     },
     tags: [
-      { label: "Python", icon: "/images/projects/python-tag-icon.png" },
-      { label: "Machine Learning", icon: "/images/projects/machine-learning-tag-icon.png" },
+      {
+        label: "HTML",
+        href: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+      },
+      {
+        label: "CSS",
+        href: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+      },
+      {
+        label: "JavaScript",
+        href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+      },
     ],
   },
   {

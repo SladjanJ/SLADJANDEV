@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import type { PROJECTS } from "@/lib/constants";
+import { PROJECTS_COPY, type PROJECTS } from "@/lib/constants";
 
 type Project = (typeof PROJECTS)[number];
 
@@ -45,15 +45,25 @@ export function ProjectCard({ project }: ProjectCardProps) {
 
   return (
     <article className="flex h-full min-h-[420px] flex-col overflow-hidden rounded-2xl bg-project-card transition-colors hover:bg-[#202d6b] sm:min-h-[480px] lg:min-h-[555px]">
-      <div className="relative aspect-[16/10] shrink-0 sm:aspect-[5/3] lg:h-[280px] lg:aspect-auto">
+      <Link
+        href={project.href}
+        className="group relative block aspect-[16/10] shrink-0 overflow-hidden sm:aspect-[5/3] lg:h-[280px] lg:aspect-auto"
+        aria-label={`${PROJECTS_COPY.imageCta}: ${project.title}`}
+        {...linkProps}
+      >
         <Image
           src={project.image.src}
           alt={project.image.alt}
           fill
-          className="object-cover"
+          className="object-cover transition-transform duration-300 group-hover:scale-[1.03] group-focus-visible:scale-[1.03]"
           sizes="(max-width: 1024px) 100vw, 33vw"
         />
-      </div>
+        <span className="pointer-events-none absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 transition-opacity duration-200 group-hover:opacity-100 group-focus-visible:opacity-100">
+          <span className="rounded-md bg-primary-btn px-5 py-2.5 text-sm font-bold uppercase tracking-wide text-text-primary shadow-lg">
+            {PROJECTS_COPY.imageCta}
+          </span>
+        </span>
+      </Link>
 
       <div className="flex min-h-0 flex-1 flex-col p-5 sm:p-6">
         <h3 className="text-base font-bold uppercase leading-snug text-text-primary sm:text-lg">

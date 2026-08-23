@@ -154,14 +154,17 @@ export const PROJECTS = [
     tags: [
       {
         label: "HTML",
+        icon: "/images/projects/html-tag-icon.svg",
         href: "https://developer.mozilla.org/en-US/docs/Web/HTML",
       },
       {
         label: "CSS",
+        icon: "/images/projects/css-tag-icon.svg",
         href: "https://developer.mozilla.org/en-US/docs/Web/CSS",
       },
       {
         label: "JavaScript",
+        icon: "/images/projects/javascript-tag-icon.svg",
         href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
       },
     ],
